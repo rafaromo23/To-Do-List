@@ -1,3 +1,108 @@
-body {
-    background-color: bisque;
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content {
+    text-align: center;
+    background: #fff;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+}
+
+
+/* headers */
+.header {
+    margin-bottom: 20px;
+    color: #007;
+}
+
+
+/* task_table */
+.task-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.task-table th, .task-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.task-table th {
+    background-color: #007;
+    color: white;
+}
+
+.task-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.task-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Forms */
+.add-form {
+    margin-top: 20px;
+}
+
+.add-form input[type="text"] {
+    width: calc(100% - 120px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.add-form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-form input[type="submit"]:hover {
+    background-color: #005;
+}
+
+
+/* buttons */
+.btn {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #007;
+    border-radius: 4px;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.btn-delete {
+    background-color: #a71d2a;
+}
+
+.btn-edit {
+    background-color: #28a745;
+}
+
+.btn-edit:hover {
+    background-color: #1e7e34;
 }
