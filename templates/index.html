@@ -14,7 +14,7 @@
         <h2 class="header">There are no tasks... Create one here!</h2>
 
         {% else %}
-        <table class="task_table">
+        <table class="task-table">
             <tr>
                 <th>Task</th>
                 <th>Added</th>
@@ -26,8 +26,7 @@
                 <td>{{task.content}}</td>
                 <td>{{task.created.strftime("%Y-%m-%d")}}</td>
                 <td>
-                    <a href="/delete/{{task.id}}" id="btn btn-delete">Delete Task</a>
-                    
+                    <a href="/delete/{{task.id}}" class="btn btn-delete">Delete Task</a>
                     <a href="/edit/{{task.id}}" class="btn btn-edit">Edit Task</a>
                 </td>
             </tr>

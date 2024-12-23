@@ -53,6 +53,10 @@ body, html {
     background-color: #f2f2f2;
 }
 
+.task-table tr:nth-child(even):hover {
+    background-color: white;
+}
+
 .task-table tr:hover {
     background-color: #f1f1f1;
 }
@@ -87,6 +91,10 @@ body, html {
 
 /* buttons */
 .btn {
+    flex: none;
+    width: 80px;
+    padding: 5px 0;
+    text-align: center;
     text-decoration: none;
     padding: 5px 10px;
     color: #007;
@@ -105,4 +113,8 @@ body, html {
 
 .btn-edit:hover {
     background-color: #1e7e34;
+}
+
+.btn-delete:hover {
+    background-color: #cf3a49;
 }
